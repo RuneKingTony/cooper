@@ -1,4 +1,4 @@
-import React from 'react';
+
 import PropertyCard from './PropertyListing';
 
 import './PropertyCard.css'

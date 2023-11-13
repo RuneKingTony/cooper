@@ -1,5 +1,5 @@
 // src/Property.tsx
-import React, { useState } from "react";
+import  { useState } from "react";
 
 interface PropertyProps {
   image: string;

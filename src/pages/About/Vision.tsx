@@ -1,5 +1,4 @@
-// src/components/VisionMission.tsx
-import React from 'react';
+
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import vision from '../../assets/images/compass.jpeg';
