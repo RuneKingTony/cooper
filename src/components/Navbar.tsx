@@ -41,7 +41,7 @@ const Navbar = () => {
         <ul className="navbar-links1 hidden md:flex space-x-4">
           <li><a href="/">Home</a></li>
           <li><a href="/About">About</a></li>
-          <Link to="/Listing"><li>Projects</li></Link>
+          <Link to="/"><li>Projects</li></Link>
           <li><a href="#">Contact</a></li>
         </ul>
         {/* Mobile menu button */}
@@ -67,7 +67,7 @@ const Navbar = () => {
         <ul className="navbar-links1 flex flex-col items-center space-y-4 p-4">
           <li><a href="/">Home</a></li>
           <Link to="/About"><li>About</li></Link>
-          <Link to="/Listing"><li>Projects</li></Link>
+          <Link to="/"><li>Projects</li></Link>
           <li><a href="#">Contact</a></li>
         </ul>
         {/* Minimize button */}

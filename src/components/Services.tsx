@@ -1,5 +1,4 @@
 // RealEstateServices.tsx
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBuilding, faSearch, faChartPie, faHome, faBriefcase, faTools } from '@fortawesome/free-solid-svg-icons';
