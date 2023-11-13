@@ -1,6 +1,6 @@
 
 
-import Footer from "../../components/Footer";
+
 import AboutPage from "./Aboutpage";
 import GoalsObjectives from "./Goals";
 import VisionMission from "./Vision";

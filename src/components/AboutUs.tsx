@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState, useCallback, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const AboutUs: React.FC = () => {
@@ -8,11 +8,11 @@ const AboutUs: React.FC = () => {
   });
 
   // Callback to set initialInView to true when entering the viewport
-  const onEnterViewport = React.useCallback(() => {
+  const onEnterViewport = useCallback(() => {
     setInitialInView(true);
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Attach the callback to the onEnter event
     if (inView) {
       onEnterViewport();
@@ -20,12 +20,16 @@ const AboutUs: React.FC = () => {
   }, [inView, onEnterViewport]);
 
   return (
-    <section className=" py-16">
+    <section className="py-16">
       <div className="container mx-auto relative">
         <div
           ref={ref}
           className={`text-center transform transition-transform ${
-            initialInView ? (inView ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0') : 'opacity-0 translate-x-full'
+            initialInView
+              ? inView
+                ? 'translate-x-0 opacity-100'
+                : 'translate-x-full opacity-0'
+              : 'opacity-0 translate-x-full'
           } duration-500`}
         >
           <h2 className="text-5xl font-bold mb-4">Who Are We?</h2>
@@ -36,7 +40,11 @@ const AboutUs: React.FC = () => {
 
         <div
           className={`text-center mt-6 transform transition-transform ${
-            initialInView ? (inView ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0') : 'opacity-0 translate-x-full'
+            initialInView
+              ? inView
+                ? 'translate-x-0 opacity-100'
+                : 'translate-x-full opacity-0'
+              : 'opacity-0 translate-x-full'
           } duration-500`}
         >
           <a href="/About" className="text-yellow-300 font-semibold text-lg hover:underline">
