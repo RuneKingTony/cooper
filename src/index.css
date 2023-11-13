@@ -1,0 +1,38 @@
+/* styles/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* styles/index.css */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Add these styles to your CSS file */
+
+.navbar1 {
+  @apply flex justify-center items-center p-5 bg-transparent text-yellow-300 fixed top-0 w-full z-50 transition duration-300 ease-in-out;
+}
+
+.navbar1.scrolled {
+  @apply bg-gray-800;
+}
+
+.navbar-links1 li:hover a,
+.navbar-links1 li:hover {
+  color: orange;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+  .imgg{
+    background-image: url("./assets/images/frerr.jpeg");;
+  }
+
+  
