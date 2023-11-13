@@ -66,7 +66,7 @@ const Navbar = () => {
       <div className={`fixed top-0 right-0 md:hidden ${isScrolled ? 'bg-black' : 'bg-transparent'} transition-transform duration-300 transform origin-top ${isMobileMenuOpen ? 'scale-y-100 translate-x-0' : 'scale-y-0 translate-x-full'}`}>
         <ul className="navbar-links1 flex flex-col items-center space-y-4 p-4">
           <li><a href="/">Home</a></li>
-          <Link to="/About"><li>About</li></Link>
+          <li><a href="/About">About</a></li>
           <Link to="/"><li>Projects</li></Link>
           <li><a href="#">Contact</a></li>
         </ul>
