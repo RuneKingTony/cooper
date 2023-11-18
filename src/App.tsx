@@ -4,18 +4,23 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import About from './pages/About/About';
-import Property from './pages/ProjectListing/Listing';
+import PropertyListing from './pages/ProjectListing/PropertyListing';
+import PropertyDetails from './pages/ProjectListing/PropertyDetails';
+import ContactUs from './pages/ContactUs';
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />,
-        <Route path="/About" element={<About/>} />
-        <Route path="/Listing" element={<Property/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="About" element={<About />} />
+        {/* Route for the property listing page */}
+        <Route path="Listing" element={<PropertyListing />} />
+        <Route path="property/:id" element={<PropertyDetails />} />
+        <Route path="ContactUs" element={<ContactUs/>} />
       </Routes>
-       <Footer/>
+      <Footer />
     </Router>
   );
 };

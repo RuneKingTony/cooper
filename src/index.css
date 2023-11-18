@@ -31,8 +31,34 @@
 .animate-fade-in {
   animation: fadeIn 1s ease-in-out;
 }
-  .imgg{
-    background-image: url("./assets/images/frerr.jpeg");;
-  }
+.imgg {
+  position: relative;
+  height: 100vh;
+  background-image: url("./assets/images/frerr.jpeg");
+  background-size: cover;
+  background-position: center;
+}
 
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay color with 50% opacity */
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
   

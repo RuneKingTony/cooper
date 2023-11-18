@@ -36,7 +36,7 @@ const VisionMission: React.FC = () => {
             <img src={vision} alt="Vision Image" className="w-full h-auto rounded-md" />
           </div>
           <div className="md:w-1/2">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 pl-5">Through the eyes of Cooper & Blake…</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 pl-5 text-yellow-500">Through the eyes of Cooper & Blake…</h1>
             <p className="text-lg md:text-xl md:pr-8 lg:pr-16 pl-5">
               Our vision is to realize a sustainable and profitable service firm that produces leadership, rewards loyalty, and is responsive to the community.
             </p>
@@ -53,9 +53,9 @@ const VisionMission: React.FC = () => {
           transition={{ duration: 1.5 }}
         >
           <div className="md:w-1/2 mb-4 md:mb-0 md:mr-8 pl-5">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-500">
               <motion.span
-                className="border-b border-blue-500"
+                className="border-b border-white-500"
                 initial="underlineHidden"
                 animate={missionInView ? 'underlineVisible' : 'underlineHidden'}
                 variants={fadeInVariants}

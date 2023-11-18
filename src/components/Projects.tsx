@@ -29,9 +29,9 @@ const ProjectPage: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3">
         {/* View All Segment */}
-        <div className="bg-gradient-to-r from-gray-700 to-white-500 py-16 p-4 rounded-md md:col-span-1 flex flex-col items-center justify-center h-full w-full">
-          <div className="mb-4 text-white">Our Projects</div>
-          <button className="bg-white text-blue-400 px-4 py-2 rounded-md">View All</button>
+        <div className="bg-gradient-to-br from-yellow-500 to-white-500 py-16 p-4 rounded-md md:col-span-1 flex flex-col items-center justify-center h-full w-full">
+          <div className="mb-4 text-white text-2xl">Our Projects</div>
+          <button className="bg-white text-yellow-700 px-4 py-2 rounded-md"><a href="Listing">View All</a></button>
         </div>
 
         {/* Project Boxes */}

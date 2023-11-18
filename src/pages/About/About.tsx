@@ -1,6 +1,3 @@
-
-
-
 import AboutPage from "./Aboutpage";
 import GoalsObjectives from "./Goals";
 import VisionMission from "./Vision";
@@ -10,8 +7,7 @@ const About: React.FC = () => {
     <div>
       <AboutPage/>
       <VisionMission/>
-      <GoalsObjectives/>
-     
+      <GoalsObjectives/> 
     </div>
   );
 };

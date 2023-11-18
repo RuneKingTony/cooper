@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
 import logo from '../assets/images/cbd.png';
 
 const Navbar = () => {
@@ -38,11 +38,11 @@ const Navbar = () => {
         <div className="flex items-center">
           <img src={logo} className="navbar-logo1 object-contain h-12 mr-4" alt="Logo" />
         </div>
-        <ul className="navbar-links1 hidden md:flex space-x-4">
+        <ul className="navbar-links1 hidden md:flex space-x-4 text-yellow-500">
           <li><a href="/">Home</a></li>
-          <li><a href="/About">About</a></li>
-          <Link to="/"><li>Projects</li></Link>
-          <li><a href="#">Contact</a></li>
+          <li><a href="About">About</a></li>
+          <li><a href="Listing">Projects</a></li>
+          <li><a href="ContactUs">Contact</a></li>
         </ul>
         {/* Mobile menu button */}
         <div className="md:hidden flex items-center">
@@ -66,9 +66,9 @@ const Navbar = () => {
       <div className={`fixed top-0 right-0 md:hidden ${isScrolled ? 'bg-black' : 'bg-transparent'} transition-transform duration-300 transform origin-top ${isMobileMenuOpen ? 'scale-y-100 translate-x-0' : 'scale-y-0 translate-x-full'}`}>
         <ul className="navbar-links1 flex flex-col items-center space-y-4 p-4">
           <li><a href="/">Home</a></li>
-          <li><a href="/About">About</a></li>
-          <Link to="/"><li>Projects</li></Link>
-          <li><a href="#">Contact</a></li>
+          <li><a href="About">About</a></li>
+          <a href="Listing"><li>Projects</li></a>
+          <li><a href="ContactUs">Contact</a></li>
         </ul>
         {/* Minimize button */}
         {isMobileMenuOpen && (

@@ -9,9 +9,9 @@ const GoalsObjectives: React.FC = () => {
   });
 
   return (
-    <div className="bg-blue-500 text-white py-12">
+    <div className="bg-gradient-to-br from-gray-900 to-white text-white py-12">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-4 text-center">Goals and Objectives</h2>
+        <h2 className="text-4xl font-bold mb-4 text-center text-yellow-500">Goals and Objectives</h2>
 
         <div
           ref={ref}

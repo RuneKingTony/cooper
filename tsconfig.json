@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ES6",
     "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,
     "removeComments": false,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",

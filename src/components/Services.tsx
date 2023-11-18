@@ -1,22 +1,20 @@
-// RealEstateServices.tsx
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library, IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faBuilding, faSearch, faChartPie, faHome, faBriefcase, faTools } from '@fortawesome/free-solid-svg-icons';
-
-
 
 // Add icons to the library
 library.add(faBuilding, faSearch, faChartPie, faHome, faBriefcase, faTools);
 
 interface ServiceProps {
-  icon: any;
+  icon: IconDefinition;
   title: string;
   description: string;
 }
 
 const Service: React.FC<ServiceProps> = ({ icon, title, description }) => (
   <div className="p-4 bg-white shadow-md rounded-md text-center transition-transform hover:shadow-lg">
-    <FontAwesomeIcon icon={icon} className="text-4xl mb-4 text-blue-500" />
+    <FontAwesomeIcon icon={icon} className="text-4xl mb-4 text-yellow-400" />
     <h3 className="text-lg font-bold mb-2">{title}</h3>
     <p>{description}</p>
   </div>
@@ -43,7 +41,7 @@ const Services: React.FC = () => (
       </div>
 
       <div className="text-center mt-8">
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
           Learn More
         </button>
       </div>

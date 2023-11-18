@@ -1,42 +1,93 @@
-// src/Property.tsx
-import  { useState } from "react";
+// PropertyListingPage.tsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+import PropertyCard from './PropertyCard'; // Assuming you have a PropertyCard component
 
-interface PropertyProps {
-  image: string;
-  price: string;
-  size: string;
-  location: string;
-  description: string;
-}
-
-const PropertyCard: React.FC<PropertyProps> = ({
-  image,
-  price,
-  size,
-  location,
-  description,
-}) => {
-  const [expanded, setExpanded] = useState(false);
-
-  const handleToggleExpand = () => {
-    setExpanded(!expanded);
-  };
+const PropertyListing: React.FC = () => {
+  // Sample property data (replace with your actual data)
+  const properties = [
+    {
+      id: 1,
+      image: 'https://cooperandblake.com/wp-content/uploads/ewpt_cache/1400x1120_90_1_c_FFFFFF_6d31306bd3a57e138bedf75827c98d87.jpg',
+      description: 'SUNRISE HILLS (SRH)',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    },
+    {
+      id: 2,
+      image: '',
+      description: 'Spacious Family Home with Garden',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    },
+    {
+      id: 2,
+      image: 'property2.jpg',
+      description: 'Spacious Family Home with Garden',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    },
+    {
+      id: 2,
+      image: 'property2.jpg',
+      description: 'Spacious Family Home with Garden',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    },
+    {
+      id: 2,
+      image: 'property2.jpg',
+      description: 'Spacious Family Home with Garden',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    },
+    {
+      id: 2,
+      image: 'property2.jpg',
+      description: 'Spacious Family Home with Garden',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    },
+    {
+      id: 2,
+      image: 'property2.jpg',
+      description: 'Spacious Family Home with Garden',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    },
+    {
+      id: 2,
+      image: 'property2.jpg',
+      description: 'Spacious Family Home with Garden',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    },
+    {
+      id: 2,
+      image: 'property2.jpg',
+      description: 'Spacious Family Home with Garden',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    },
+    
+    {
+      id: 2,
+      image: 'property2.jpg',
+      description: 'Spacious Family Home with Garden',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    },
+    {
+      id: 2,
+      image: 'property2.jpg',
+      description: 'Spacious Family Home with Garden',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    },
+    // Add more properties as needed
+  ];
 
   return (
-    <div
-      className={`property ${expanded ? "expanded" : ""}`}
-      onClick={handleToggleExpand}
-    >
-      <img src={image} alt="Property" className="property-image" />
-      <div className="property-details">
-        <h2>{price}</h2>
-        <p>{size}</p>
-        <p>{location}</p>
-        <p>{description}</p>
-        {expanded && <button>Show Less</button>}
+    <div className="bg-gradient-to-b from-gray-700 to-white-500">
+      <div className="container mx-auto p-4 pt-32">
+        <h2 className="text-3xl font-bold text-yellow-400 mb-8">FEATURED PROPERTIES</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {properties.map((property) => (
+            <PropertyCard key={property.id} property={property} />
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
-export default PropertyCard;
+export default PropertyListing;
