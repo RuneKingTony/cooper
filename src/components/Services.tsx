@@ -42,7 +42,7 @@ const Services: React.FC = () => (
 
       <div className="text-center mt-8">
         <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
-          Learn More
+         <a href='Service'> Learn More</a>
         </button>
       </div>
     </div>

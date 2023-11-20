@@ -41,6 +41,7 @@ const Navbar = () => {
         <ul className="navbar-links1 hidden md:flex space-x-4 text-yellow-500">
           <li><a href="/">Home</a></li>
           <li><a href="About">About</a></li>
+          <li><a href="Service">Services</a></li>
           <li><a href="Listing">Projects</a></li>
           <li><a href="ContactUs">Contact</a></li>
         </ul>
@@ -67,6 +68,7 @@ const Navbar = () => {
         <ul className="navbar-links1 flex flex-col items-center space-y-4 p-4">
           <li><a href="/">Home</a></li>
           <li><a href="About">About</a></li>
+          <li><a href="Service">Service</a></li>
           <a href="Listing"><li>Projects</li></a>
           <li><a href="ContactUs">Contact</a></li>
         </ul>

@@ -10,7 +10,7 @@ const AboutPage: React.FC = () => {
   }, [controls]);
 
   return (
-    <div className="bg-gradient-to-b from-gray-900 to-white-500 min-h-screen flex items-center justify-center">
+    <div className="bg-gradient-to-b from-gray-900 to-white-500 min-h-screen flex items-center justify-center pt-32">
       <motion.div
         className="bg-white p-8 md:p-16 rounded-lg shadow-lg flex flex-col md:flex-row md:items-center w-4/5 overflow-hidden"
         initial={{ opacity: 0, x: -50 }}
