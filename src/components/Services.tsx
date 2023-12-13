@@ -14,7 +14,7 @@ interface ServiceProps {
 
 const Service: React.FC<ServiceProps> = ({ icon, title, description }) => (
   <div className="p-4 bg-white shadow-md rounded-md text-center transition-transform hover:shadow-lg">
-    <FontAwesomeIcon icon={icon} className="text-4xl mb-4 text-yellow-400" />
+    <FontAwesomeIcon icon={icon} className="text-4xl mb-4 text-yellow-500" />
     <h3 className="text-lg font-bold mb-2">{title}</h3>
     <p>{description}</p>
   </div>

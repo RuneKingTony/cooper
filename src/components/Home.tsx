@@ -13,7 +13,7 @@ const Home: React.FC = () => {
       <AboutUs/>
       <Services/>
       <Project/>
-     
+
     </div>
   );
 };

@@ -3,13 +3,9 @@ import { useParams } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { useInView } from 'react-intersection-observer';
 
 const PropertyDetails: React.FC = () => {
   const { id } = useParams<{ id?: string }>();
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  });
 
   if (!id) {
     return <div>Error: Property ID not provided</div>;
@@ -84,9 +80,9 @@ const PropertyDetails: React.FC = () => {
   };
 
   return (
-    <div className={`bg-gradient-to-b from-gray-900 to-white-500 min-h-screen flex items-center justify-center ${inView ? 'animate-slide-in' : ''}`}>
-      <div className="container p-4 pt-16" ref={ref}>
-        <div className={`bg-gray-200 p-8 rounded-lg shadow-md relative ${inView ? 'animate-slide-in' : ''}`}>
+    <div className="bg-gradient-to-b from-gray-900 to-white-500 min-h-screen flex items-center justify-center">
+      <div className="container  p-4 pt-16">
+        <div className="bg-gray-200 p-8 rounded-lg shadow-md relative">
           <h2 className="text-4xl font-bold text-yellow-500 mb-4">Property Details</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

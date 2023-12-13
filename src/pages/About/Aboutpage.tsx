@@ -26,7 +26,7 @@ const AboutPage: React.FC = () => {
             Fully abreast with the housing sector and real estate market, our team is girded with germane advisory competencies.
           </p>
           <button className="bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition duration-300">
-            Explore Our Services
+           <a href="/Service"> Explore Our Services</a>
           </button>
         </div>
         {/* Right side */}

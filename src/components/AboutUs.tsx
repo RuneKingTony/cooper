@@ -34,7 +34,7 @@ const AboutUs: React.FC = () => {
         >
           <h2 className="text-5xl font-bold mb-4 text-yellow-400">Who Are We?</h2>
           <p className="text-lg mb-8 leading-relaxed">
-            Cooper&Blake is a forward-thinking Real Estate firm specializing in innovative solutions. Our team creates value for clients by articulating and servicing their objectives, staying fully abreast of the housing sector and real estate market with cutting-edge advisory competencies. We are convinced that with us, it's possible to redefine your real estate experience.
+          Cooper & Blake embodies sophistication in real estate, specializing in innovative solutions and client-centric value creation. Our expert team navigates the dynamic housing sector with cutting-edge competencies. Committed to excellence, we redefine your real estate experience with sublime insight and refined expertise. Welcome to a realm where professional distinction meets the art of transformation.
           </p>
         </div>
 
