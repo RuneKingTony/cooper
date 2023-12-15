@@ -33,8 +33,12 @@ const Navbar = () => {
 
   const handleLinkClick = (path: string) => {
     // Scroll to the top when a link is clicked
+    
     startTransition(() => {
       window.scrollTo(0, 0);
+      window.scrollTo(0, 0);
+    navigate(path);
+    minimizeMobileMenu();
       navigate(path);
     });
   };
