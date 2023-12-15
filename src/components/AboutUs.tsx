@@ -20,7 +20,7 @@ const AboutUs: React.FC = () => {
   }, [inView, onEnterViewport]);
 
   return (
-    <section className="py-16">
+    <section className="py-16 ">
       <div className="container mx-auto relative">
         <div
           ref={ref}
@@ -33,7 +33,7 @@ const AboutUs: React.FC = () => {
           } duration-500`}
         >
           <h2 className="text-5xl font-bold mb-4 text-yellow-400">Who Are We?</h2>
-          <p className="text-lg mb-8 leading-relaxed">
+          <p className="text-lg mb-8 leading-relaxed sm: p-4">
           Cooper & Blake embodies sophistication in real estate, specializing in innovative solutions and client-centric value creation. Our expert team navigates the dynamic housing sector with cutting-edge competencies. Committed to excellence, we redefine your real estate experience with sublime insight and refined expertise. Welcome to a realm where professional distinction meets the art of transformation.
           </p>
         </div>

@@ -19,7 +19,7 @@ const GoalsObjectives: React.FC = () => {
         >
           {/* Left side */}
           <div className="md:w-1/2 md:mr-8 mb-4 md:mb-0">
-            <ul className="list-disc pl-4 text-lg">
+            <ul className="list-disc pl-4 text-lg sm: pl-6">
               <li className="mb-4">
                 Articulate and serve clientele objectives, working closely with them to realize their plans.
               </li>
